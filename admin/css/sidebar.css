@@ -1,0 +1,21 @@
+.sidebar {
+  width: 300px;
+  background-color: rgb(212, 235, 236);
+  height: 100vh;
+  position: fixed;
+  left: 0;
+  padding: 0;
+  border-right: 1px solid lightpink;
+}
+.sidebar-item {
+  margin-top: 20px;
+}
+.sidebar-item li {
+  padding: 15px;
+  padding-left: 20px;
+  cursor: pointer;
+  font-weight: 500;
+}
+.sidebar-item li:hover {
+  background-color: rgba(240, 248, 255, 0.74);
+}

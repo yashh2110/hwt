@@ -1,0 +1,121 @@
+@import url("https://fonts.googleapis.com/css2?family=Russo+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Squada+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap");
+
+/* font-family: "Ubuntu", sans-serif; */
+/* font-family: "Russo One", sans-serif; */
+/* font-family: "Bree Serif", serif; */
+
+* {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  text-decoration: none;
+}
+.darkbg {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.712);
+  overflow: hidden;
+}
+.headings {
+  font-family: "Squada One", cursive;
+  font-size: 2.2em;
+  cursor: pointer;
+}
+.donate-cap {
+  display: flex;
+  justify-content: center;
+}
+.donate-cap-div {
+  width: 80%;
+  padding: 10px;
+  margin-top: 170px;
+}
+.gateway-div {
+  position: relative;
+  display: flex;
+  margin-bottom: 50px;
+}
+.gateway-cap {
+  position: relative;
+  width: 50%;
+  background-image: url("../images/pic6.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.gateway-cap-img {
+  width: 100%;
+  height: 100%;
+  background-image: url("../images/pic6.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.gateway-form {
+  position: relative;
+  width: 50%;
+  height: 100%;
+  background-color: white;
+}
+.donor-form {
+  padding: 20px;
+  width: 80%;
+}
+.inputdiv {
+  position: relative;
+  width: 100%;
+  height: 50px;
+  margin-top: 19px;
+  background-color: transparent;
+}
+
+.text {
+  position: absolute;
+  left: 0px;
+  bottom: 5px;
+  padding: 5px;
+  font-weight: 500;
+  color: rgb(0, 0, 0);
+  pointer-events: none;
+  background-color: transparent;
+  transition: 0.3s ease-in;
+}
+.inputf {
+  width: 90%;
+  position: relative;
+  height: 95%;
+  border: transparent;
+  color: rgb(7, 7, 7);
+  border-bottom: 1px solid rgb(0, 0, 0);
+  transition: 0.3s;
+  background-color: transparent;
+}
+.inputf:focus {
+  outline: none;
+  padding-top: 5px;
+  border-bottom: 4px solid rgb(211, 8, 8);
+}
+.inputf:focus ~ .text,
+.inputf:not(:focus):valid ~ .text {
+  top: -20px;
+  left: 0;
+  color: rgb(211, 8, 8);
+  padding: 0;
+  opacity: 0.8;
+}
+@media screen and (max-width: 900px) {
+  .gateway-cap {
+    display: none;
+  }
+  .gateway-form {
+    width: 100%;
+  }
+  .donor-form {
+    padding: 20px;
+  }
+}

@@ -1,0 +1,12 @@
+$(document).ready(function(){
+  $(".down").click(function(){
+    $(".user").toggleClass("t100");
+    $(this).toggle();
+    $(".up").toggle();
+  })
+  $(".up").click(function(){
+    $(".user").toggleClass("t100");
+    $(this).toggle();
+    $(".down").toggle();
+  })
+})

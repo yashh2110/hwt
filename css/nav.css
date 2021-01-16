@@ -1,0 +1,118 @@
+.homenav {
+  position: sticky;
+  background-color: white;
+
+  top: 0;
+  left: 0;
+  z-index: 999;
+}
+a {
+  color: rgba(0, 0, 0, 0.856);
+}
+a:hover {
+  text-decoration: none;
+}
+.callnav {
+  background-color: rgba(152, 191, 218, 0.411);
+}
+.donate {
+  background-color: rgb(218, 10, 10);
+  color: white;
+}
+
+.donate:hover {
+  background-color: rgb(139, 81, 4);
+  cursor: pointer;
+}
+
+.navlist li {
+  transition: 0.2s ease-in;
+  text-align: center;
+  padding: 20px;
+  font-weight: 500;
+  border-bottom: 4px solid transparent;
+}
+.navlist li:not(.donate) {
+  margin-left: 2px;
+}
+.navlist li:hover:not(.donate) {
+  cursor: pointer;
+  background-color: rgb(211, 8, 8);
+  color: rgb(255, 255, 255);
+}
+.navbutton {
+  display: none;
+  position: relative;
+}
+.navicon {
+  width: 50px;
+  position: relative;
+  left: 0;
+  padding: 11px;
+  z-index: 10;
+}
+.navs {
+  padding: 2px;
+  display: block;
+  margin: 3px;
+  width: 100%;
+  height: 1px;
+  background-color: rgb(211, 8, 8);
+}
+.navicon span:nth-child(2) {
+  background-color: rgb(211, 8, 8);
+}
+.span1 {
+  transform-origin: top left;
+  margin: 15px 15px 15px 0;
+  transform: rotate(45deg);
+  background-color: rgb(211, 8, 8);
+  transition: all 0.3s ease-in-out;
+}
+.span2 {
+  display: none;
+  transition: all 0.3s ease-in-out;
+}
+.span3 {
+  margin: 15px 15px 15px 0;
+  transform-origin: bottom left;
+  transform: rotate(-45deg);
+  background-color: rgb(211, 8, 8);
+  transition: all 0.3s ease-in-out;
+}
+/* NAV */
+@media screen and (max-width: 900px) {
+  .logo {
+    padding: 22px;
+  }
+
+  .navbutton {
+    display: block;
+  }
+  .navlist {
+    position: absolute;
+    top: 100%;
+    transform: scale(0);
+    width: 100%;
+    background-color: white;
+    display: block;
+  }
+  .top100 {
+    transition: all 0.25s ease-in-out;
+
+    transform: scale(1);
+  }
+  .navlist li {
+    border-top: 1px solid rgba(128, 128, 128, 0.11);
+    border-bottom: 1px solid rgba(128, 128, 128, 0.11);
+  }
+  .donate {
+    background-color: white;
+    color: rgba(0, 0, 0, 0.863);
+  }
+  .navlist li:hover:not(.donate),
+  .donate:hover {
+    background-color: lightpink;
+    color: rgba(0, 0, 0, 0.863);
+  }
+}

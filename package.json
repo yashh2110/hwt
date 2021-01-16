@@ -1,0 +1,21 @@
+{
+  "name": "hwt",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "aos": "^2.3.4",
+    "bootstrap": "^4.5.3",
+    "jquery": "^3.5.1",
+    "jquery-parallax.js": "^1.5.0",
+    "owl.carousel": "^2.3.4",
+    "smooth-scrollbar": "^8.5.3"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
