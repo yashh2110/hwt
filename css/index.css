@@ -308,7 +308,9 @@ a:hover {
   margin-left: auto;
   margin-right: auto;
 } */
-
+.achievments {
+  position: relative;
+}
 .achievment-item {
   position: relative;
   width: 500px;
@@ -386,6 +388,20 @@ a:hover {
 .achivement-knowmorebtn:hover {
   background-color: rgba(163, 5, 5, 0.979);
 }
+
+.achievment-left {
+  position: absolute;
+  top: 50%;
+  left: 10px;
+  z-index: 1;
+}
+.achievment-right {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  z-index: 1;
+}
+
 .workitem-img {
   position: relative;
   width: 100%;

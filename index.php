@@ -151,7 +151,7 @@
             </div>
           </div>
         </div>
-       
+
       </div>
 
     </div>
@@ -169,38 +169,46 @@
 <div class="container-fluid-sm bg-white achievments">
 <h3 class="text-center headings pt-2" style="color:rgb(211, 8, 8);">Our Achievments</h3>
     <div class="owl-carousel owl-achivement owl-theme">
-    <div class="item achievment-item" data-aos="fade-up"  style="background-image:url('./images/pic1.jpg')"><div class="ribbon"><p class="headings ">Medical support</p></div>
+    <div class="item achievment-item" data-aos="fade-up"  style="background-image:url('./images/pic1.jpg')">
             <div class="darkbg-darker">
               <p class="achivement-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Velit, et vero necessitatibus veniam minus cupiditate fuga esse quod accusamus, natus atque. Praesentium quos quae magnam illum enim dicta voluptatibus assumenda. Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus, expedita! Provident quaerat veritatis sequi vero. Possimus voluptatem saepe doloribus optio fugiat quidem sapiente ullam tempora tenetur, molestias suscipit numquam id? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Assumenda minima iste non facere modi quasi fugit exercitationem est animi tempore culpa quam libero magni corrupti, eaque obcaecati molestias tenetur incidunt.</p>
               <a href="" class="p-2 achievment-readmorebtn">Read More..</a>
             </div>
   </div>
-    <div class="item achievment-item" data-aos="fade-up"  style="background-image:url('./images/pic1.jpg')"><div class="ribbon"><p class="headings ">Food Distribution</p></div>
-    <div class="darkbg-darker"><p class="achivement-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Velit, et vero necessitatibus veniam minus cupiditate fuga esse quod accusamus, natus atque. Praesentium quos quae magnam illum enim dicta voluptatibus assumenda. Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus, expedita! Provident quaerat veritatis sequi vero. Possimus voluptatem saepe doloribus optio fugiat quidem sapiente ullam tempora tenetur, molestias suscipit numquam id? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Assumenda minima iste non facere modi quasi fugit exercitationem est animi tempore culpa quam libero magni corrupti, eaque obcaecati molestias tenetur incidunt.</p>
-    <a href="" class="p-2 achievment-readmorebtn">Read More..</a>
-  </div></div>
-    <div class="item achievment-item" data-aos="fade-up"  style="background-image:url('./images/pic1.jpg')"><div class="ribbon"><p class="headings ">Food Distribution</p></div>
-    <div class="darkbg-darker"><p class="achivement-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Velit, et vero necessitatibus veniam minus cupiditate fuga esse quod accusamus, natus atque. Praesentium quos quae magnam illum enim dicta voluptatibus assumenda. Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus, expedita! Provident quaerat veritatis sequi vero. Possimus voluptatem saepe doloribus optio fugiat quidem sapiente ullam tempora tenetur, molestias suscipit numquam id? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Assumenda minima iste non facere modi quasi fugit exercitationem est animi tempore culpa quam libero magni corrupti, eaque obcaecati molestias tenetur incidunt.</p>
-    <a href="" class="p-2 achievment-readmorebtn">Read More..</a>
-  </div></div>
-    <div class="item achievment-item" data-aos="fade-up"  style="background-image:url('./images/pic1.jpg')"><div class="ribbon"><p class="headings ">Food Distribution</p></div>
-    <div class="darkbg-darker"><p class="achivement-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Velit, et vero necessitatibus veniam minus cupiditate fuga esse quod accusamus, natus atque. Praesentium quos quae magnam illum enim dicta voluptatibus assumenda. Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus, expedita! Provident quaerat veritatis sequi vero. Possimus voluptatem saepe doloribus optio fugiat quidem sapiente ullam tempora tenetur, molestias suscipit numquam id? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Assumenda minima iste non facere modi quasi fugit exercitationem est animi tempore culpa quam libero magni corrupti, eaque obcaecati molestias tenetur incidunt.</p>
-    <a href="" class="p-2 achievment-readmorebtn">Read More..</a>
-  </div></div>
-    <div class="item achievment-item" data-aos="fade-up"  style="background-image:url('./images/pic1.jpg')"><div class="ribbon"><p class="headings ">Food Distribution</p></div>
-    <div class="darkbg-darker"><p class="achivement-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Velit, et vero necessitatibus veniam minus cupiditate fuga esse quod accusamus, natus atque. Praesentium quos quae magnam illum enim dicta voluptatibus assumenda. Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus, expedita! Provident quaerat veritatis sequi vero. Possimus voluptatem saepe doloribus optio fugiat quidem sapiente ullam tempora tenetur, molestias suscipit numquam id? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Assumenda minima iste non facere modi quasi fugit exercitationem est animi tempore culpa quam libero magni corrupti, eaque obcaecati molestias tenetur incidunt.</p>
-    <a href="" class="p-2 achievment-readmorebtn">Read More..</a>
-  </div></div>
-    <div class="item achievment-item" data-aos="fade-up"  style="background-image:url('./images/pic1.jpg')"><div class="ribbon"><p class="headings ">Food Distribution</p></div>
-    <div class="darkbg-darker"><p class="achivement-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Velit, et vero necessitatibus veniam minus cupiditate fuga esse quod accusamus, natus atque. Praesentium quos quae magnam illum enim dicta voluptatibus assumenda. Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus, expedita! Provident quaerat veritatis sequi vero. Possimus voluptatem saepe doloribus optio fugiat quidem sapiente ullam tempora tenetur, molestias suscipit numquam id? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Assumenda minima iste non facere modi quasi fugit exercitationem est animi tempore culpa quam libero magni corrupti, eaque obcaecati molestias tenetur incidunt.</p>
-    <a href="" class="p-2 achievment-readmorebtn">Read More..</a>
-  </div></div>
-    <div class="item achievment-item" data-aos="fade-up"  style="background-image:url('./images/pic1.jpg')"><div class="ribbon"><p class="headings ">Food Distribution</p></div>
-    <div class="darkbg-darker"><p class="achivement-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Velit, et vero necessitatibus veniam minus cupiditate fuga esse quod accusamus, natus atque. Praesentium quos quae magnam illum enim dicta voluptatibus assumenda. Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus, expedita! Provident quaerat veritatis sequi vero. Possimus voluptatem saepe doloribus optio fugiat quidem sapiente ullam tempora tenetur, molestias suscipit numquam id? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Assumenda minima iste non facere modi quasi fugit exercitationem est animi tempore culpa quam libero magni corrupti, eaque obcaecati molestias tenetur incidunt.</p>
-    <a href="" class="p-2 achievment-readmorebtn">Read More..</a>
-  </div></div>
-
+    <div class="item achievment-item" data-aos="fade-up"  style="background-image:url('./images/pic2.png')">
+      <div class="darkbg-darker"><p class="achivement-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Velit, et vero necessitatibus veniam minus cupiditate fuga esse quod accusamus, natus atque. Praesentium quos quae magnam illum enim dicta voluptatibus assumenda. Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus, expedita! Provident quaerat veritatis sequi vero. Possimus voluptatem saepe doloribus optio fugiat quidem sapiente ullam tempora tenetur, molestias suscipit numquam id? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Assumenda minima iste non facere modi quasi fugit exercitationem est animi tempore culpa quam libero magni corrupti, eaque obcaecati molestias tenetur incidunt.</p>
+      <a href="" class="p-2 achievment-readmorebtn">Read More..</a>
+      </div>
+    </div>
+    <div class="item achievment-item" data-aos="fade-up"  style="background-image:url('./images/pic3.jpg')">
+      <div class="darkbg-darker"><p class="achivement-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Velit, et vero necessitatibus veniam minus cupiditate fuga esse quod accusamus, natus atque. Praesentium quos quae magnam illum enim dicta voluptatibus assumenda. Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus, expedita! Provident quaerat veritatis sequi vero. Possimus voluptatem saepe doloribus optio fugiat quidem sapiente ullam tempora tenetur, molestias suscipit numquam id? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Assumenda minima iste non facere modi quasi fugit exercitationem est animi tempore culpa quam libero magni corrupti, eaque obcaecati molestias tenetur incidunt.</p>
+      <a href="" class="p-2 achievment-readmorebtn">Read More..</a>
+      </div>
+    </div>
+    <div class="item achievment-item" data-aos="fade-up"  style="background-image:url('./images/pic5.jpg')">
+      <div class="darkbg-darker"><p class="achivement-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Velit, et vero necessitatibus veniam minus cupiditate fuga esse quod accusamus, natus atque. Praesentium quos quae magnam illum enim dicta voluptatibus assumenda. Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus, expedita! Provident quaerat veritatis sequi vero. Possimus voluptatem saepe doloribus optio fugiat quidem sapiente ullam tempora tenetur, molestias suscipit numquam id? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Assumenda minima iste non facere modi quasi fugit exercitationem est animi tempore culpa quam libero magni corrupti, eaque obcaecati molestias tenetur incidunt.</p>
+      <a href="" class="p-2 achievment-readmorebtn">Read More..</a>
+      </div>
+    </div>
+    <div class="item achievment-item" data-aos="fade-up"  style="background-image:url('./images/pic6.jpg')">
+      <div class="darkbg-darker"><p class="achivement-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Velit, et vero necessitatibus veniam minus cupiditate fuga esse quod accusamus, natus atque. Praesentium quos quae magnam illum enim dicta voluptatibus assumenda. Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus, expedita! Provident quaerat veritatis sequi vero. Possimus voluptatem saepe doloribus optio fugiat quidem sapiente ullam tempora tenetur, molestias suscipit numquam id? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Assumenda minima iste non facere modi quasi fugit exercitationem est animi tempore culpa quam libero magni corrupti, eaque obcaecati molestias tenetur incidunt.</p>
+      <a href="" class="p-2 achievment-readmorebtn">Read More..</a>
+      </div>
+    </div>
+    <div class="item achievment-item" data-aos="fade-up"  style="background-image:url('./images/pic1.jpg')">
+      <div class="darkbg-darker"><p class="achivement-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Velit, et vero necessitatibus veniam minus cupiditate fuga esse quod accusamus, natus atque. Praesentium quos quae magnam illum enim dicta voluptatibus assumenda. Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus, expedita! Provident quaerat veritatis sequi vero. Possimus voluptatem saepe doloribus optio fugiat quidem sapiente ullam tempora tenetur, molestias suscipit numquam id? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Assumenda minima iste non facere modi quasi fugit exercitationem est animi tempore culpa quam libero magni corrupti, eaque obcaecati molestias tenetur incidunt.</p>
+      <a href="" class="p-2 achievment-readmorebtn">Read More..</a>
+      </div>
+    </div>
 </div>
+    <svg class="achievment-left" width="54" height="54" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <circle cx="17.0004" cy="17" r="17" transform="rotate(-180 17.0004 17)" fill="#D30808"/>
+    <path d="M9.64682 16.6465C9.45155 16.8417 9.45155 17.1583 9.64682 17.3536L12.8288 20.5355C13.0241 20.7308 13.3406 20.7308 13.5359 20.5355C13.7312 20.3403 13.7312 20.0237 13.5359 19.8284L10.7075 17L13.5359 14.1716C13.7312 13.9763 13.7312 13.6597 13.5359 13.4645C13.3406 13.2692 13.0241 13.2692 12.8288 13.4645L9.64682 16.6465ZM24.0004 16.5L10.0004 16.5V17.5L24.0004 17.5V16.5Z" fill="white"/>
+    </svg>
+    <svg class="achievment-right " width="54" height="54" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <circle cx="17" cy="17" r="17" fill="#D30808"/>
+    <path d="M24.3536 17.3536C24.5488 17.1583 24.5488 16.8417 24.3536 16.6464L21.1716 13.4645C20.9763 13.2692 20.6597 13.2692 20.4645 13.4645C20.2692 13.6597 20.2692 13.9763 20.4645 14.1716L23.2929 17L20.4645 19.8284C20.2692 20.0237 20.2692 20.3403 20.4645 20.5355C20.6597 20.7308 20.9763 20.7308 21.1716 20.5355L24.3536 17.3536ZM10 17.5H24V16.5H10V17.5Z" fill="white"/>
+    </svg>
 
   <!-- Indicators -->
 </div>

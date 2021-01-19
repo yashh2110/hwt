@@ -1,16 +1,7 @@
 
 $(document).ready(function(){
 
-$('.pc-carousel-right').click(function() {
-    $('.owl-work').trigger('stop.owl.autoplay');
-    $('.owl-work').trigger('next.owl.carousel', [500]);
-    $('.owl-work').trigger('play.owl.autoplay');
-})
-$('.pc-carousel-left').click(function() {
-    $('.owl-work').trigger('stop.owl.autoplay');
-    $('.owl-work').trigger('prev.owl.carousel', [500]);
-    $('.owl-work').trigger('play.owl.autoplay');
-})
+
     $("#navicon").click(function(){
       $("#s1").toggleClass("span1");
       $("#s2").toggle();
@@ -143,7 +134,7 @@ $('.owl-achivement').owlCarousel({
   autoWidth:true,
   smartSpeed: 700,
   items:2,
-  nav:true,
+  nav:false,
   autoHeight:true,
   responsive:{
       600:{
@@ -177,5 +168,24 @@ responsive:{
 
 }
 });
-
+$('.pc-carousel-right').click(function() {
+    $('.owl-work').trigger('stop.owl.autoplay');
+    $('.owl-work').trigger('next.owl.carousel', [500]);
+    $('.owl-work').trigger('play.owl.autoplay');
+})
+$('.pc-carousel-left').click(function() {
+    $('.owl-work').trigger('stop.owl.autoplay');
+    $('.owl-work').trigger('prev.owl.carousel', [500]);
+    $('.owl-work').trigger('play.owl.autoplay');
+})
+$('.achievment-right').click(function() {
+    $('.owl-achivement').trigger('stop.owl.autoplay');
+    $('.owl-achivement').trigger('next.owl.carousel', [500]);
+    $('.owl-achivement').trigger('play.owl.autoplay');
+});
+$('.achievment-left').click(function() {
+    $('.owl-achivement').trigger('stop.owl.autoplay');
+    $('.owl-achivement').trigger('prev.owl.carousel', [500]);
+    $('.owl-achivement').trigger('play.owl.autoplay');
+})
 });
