@@ -188,4 +188,31 @@ $('.achievment-left').click(function() {
     $('.owl-achivement').trigger('prev.owl.carousel', [500]);
     $('.owl-achivement').trigger('play.owl.autoplay');
 })
+var flag = true;
+
+  $(window).scroll(()=>{
+    if(flag){
+    if($(window).scrollTop() >= 1400){
+      flag=false;
+      var i=0;
+      var timelimit=0;
+      var runner = setInterval(()=>{
+        if(i>1999){
+          clearInterval(runner);
+        }
+        $("#donors").html(i);
+        if(timelimit==300){
+          $("#donors").html("2000");
+          
+          clearInterval(runner);
+          }
+        timelimit++;
+        i++;
+      },10);
+    }
+}
+})
+
+
+
 });

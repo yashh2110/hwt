@@ -80,22 +80,22 @@
 <div data-aos="fade-up" data-aos-duration="750" class="container-sm info">
   <div>
   <i class="fas fa-hand-holding-heart "></i>
-  <b class="text-center d-block p-2 mr-1 text-dark">2K</b>
+  <b id="donors" class="text-center d-block p-2 mr-1 text-dark">2K</b>
   <p class="text-center">donors<p>
   </div>
   <div>
   <i class="fas fa-hands-helping "></i>
-  <b class="text-center d-block p-2 mr-1 text-dark">1269</b>
+  <b id="saved" class="text-center d-block p-2 mr-1 text-dark">1269</b>
   <p class="text-center">saved<p>
   </div>
   <div>
   <i class="fas fa-handshake "></i>
-  <b class="text-center d-block p-2 mr-1 text-dark">259</b>
+  <b id="no-volunteer" class="text-center d-block p-2 mr-1 text-dark">259</b>
   <p class="text-center">volunteers<p>
   </div>
   <div>
   <i class="fas fa-rupee-sign"></i>
-  <b class="text-center d-block p-2 mr-1 text-dark">40K</b>
+  <b id="donated" class="text-center d-block p-2 mr-1 text-dark">40K</b>
   <p class="text-center">dontated<p>
   </div>
 
