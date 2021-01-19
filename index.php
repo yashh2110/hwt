@@ -162,42 +162,65 @@
             <i class="pc-carousel-right p-5 fas fa-angle-right ml-auto mr-4  d-block"></i>
         </div>
 </div>
-<br>
-<br>
-<br>
+
 <!-- achivements -->
 <div class="container-fluid-sm bg-white achievments">
+  <br>
 <h3 class="text-center headings pt-2" style="color:rgb(211, 8, 8);">Our Achievments</h3>
     <div class="owl-carousel owl-achivement owl-theme">
     <div class="item achievment-item" data-aos="fade-up"  style="background-image:url('./images/pic1.jpg')">
-            <div class="darkbg-darker">
-              <p class="achivement-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Velit, et vero necessitatibus veniam minus cupiditate fuga esse quod accusamus, natus atque. Praesentium quos quae magnam illum enim dicta voluptatibus assumenda. Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus, expedita! Provident quaerat veritatis sequi vero. Possimus voluptatem saepe doloribus optio fugiat quidem sapiente ullam tempora tenetur, molestias suscipit numquam id? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Assumenda minima iste non facere modi quasi fugit exercitationem est animi tempore culpa quam libero magni corrupti, eaque obcaecati molestias tenetur incidunt.</p>
-              <a href="" class="p-2 achievment-readmorebtn">Read More..</a>
-            </div>
+      <div class="darkbg-darker">
+        <p class="achivement-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Velit, et vero necessitatibus veniam minus cupiditate fuga esse quod accusamus, natus atque. Praesentium quos quae magnam illum enim dicta voluptatibus assumenda. Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus, expedita! Provident quaerat veritatis sequi vero. Possimus voluptatem saepe doloribus optio fugiat quidem sapiente ullam tempora tenetur, molestias suscipit numquam id? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Assumenda minima iste non facere modi quasi fugit exercitationem est animi tempore culpa quam libero magni corrupti, eaque obcaecati molestias tenetur incidunt.</p>
+        <a href="" class="p-2 achievment-readmorebtn">Read More..</a>
+      </div>
+      <div class="achivement-about">
+        <span style="font-size:1.3em;font-weight:600;color:rgb(211,8,8)" class="text-left">Heading</span>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor</p>
+      </div>
   </div>
     <div class="item achievment-item" data-aos="fade-up"  style="background-image:url('./images/pic2.png')">
       <div class="darkbg-darker"><p class="achivement-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Velit, et vero necessitatibus veniam minus cupiditate fuga esse quod accusamus, natus atque. Praesentium quos quae magnam illum enim dicta voluptatibus assumenda. Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus, expedita! Provident quaerat veritatis sequi vero. Possimus voluptatem saepe doloribus optio fugiat quidem sapiente ullam tempora tenetur, molestias suscipit numquam id? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Assumenda minima iste non facere modi quasi fugit exercitationem est animi tempore culpa quam libero magni corrupti, eaque obcaecati molestias tenetur incidunt.</p>
       <a href="" class="p-2 achievment-readmorebtn">Read More..</a>
+      </div>
+      <div class="achivement-about">
+        <span style="font-size:1.3em;font-weight:600;color:rgb(211,8,8)" class="text-left">Heading</span>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor</p>
       </div>
     </div>
     <div class="item achievment-item" data-aos="fade-up"  style="background-image:url('./images/pic3.jpg')">
       <div class="darkbg-darker"><p class="achivement-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Velit, et vero necessitatibus veniam minus cupiditate fuga esse quod accusamus, natus atque. Praesentium quos quae magnam illum enim dicta voluptatibus assumenda. Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus, expedita! Provident quaerat veritatis sequi vero. Possimus voluptatem saepe doloribus optio fugiat quidem sapiente ullam tempora tenetur, molestias suscipit numquam id? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Assumenda minima iste non facere modi quasi fugit exercitationem est animi tempore culpa quam libero magni corrupti, eaque obcaecati molestias tenetur incidunt.</p>
       <a href="" class="p-2 achievment-readmorebtn">Read More..</a>
       </div>
+      <div class="achivement-about">
+        <span style="font-size:1.3em;font-weight:600;color:rgb(211,8,8)" class="text-left">Heading</span>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor</p>
+      </div>
     </div>
     <div class="item achievment-item" data-aos="fade-up"  style="background-image:url('./images/pic5.jpg')">
       <div class="darkbg-darker"><p class="achivement-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Velit, et vero necessitatibus veniam minus cupiditate fuga esse quod accusamus, natus atque. Praesentium quos quae magnam illum enim dicta voluptatibus assumenda. Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus, expedita! Provident quaerat veritatis sequi vero. Possimus voluptatem saepe doloribus optio fugiat quidem sapiente ullam tempora tenetur, molestias suscipit numquam id? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Assumenda minima iste non facere modi quasi fugit exercitationem est animi tempore culpa quam libero magni corrupti, eaque obcaecati molestias tenetur incidunt.</p>
       <a href="" class="p-2 achievment-readmorebtn">Read More..</a>
+      </div>
+      <div class="achivement-about">
+        <span style="font-size:1.3em;font-weight:600;color:rgb(211,8,8)" class="text-left">Heading</span>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor</p>
       </div>
     </div>
     <div class="item achievment-item" data-aos="fade-up"  style="background-image:url('./images/pic6.jpg')">
       <div class="darkbg-darker"><p class="achivement-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Velit, et vero necessitatibus veniam minus cupiditate fuga esse quod accusamus, natus atque. Praesentium quos quae magnam illum enim dicta voluptatibus assumenda. Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus, expedita! Provident quaerat veritatis sequi vero. Possimus voluptatem saepe doloribus optio fugiat quidem sapiente ullam tempora tenetur, molestias suscipit numquam id? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Assumenda minima iste non facere modi quasi fugit exercitationem est animi tempore culpa quam libero magni corrupti, eaque obcaecati molestias tenetur incidunt.</p>
       <a href="" class="p-2 achievment-readmorebtn">Read More..</a>
       </div>
+      <div class="achivement-about">
+        <span style="font-size:1.3em;font-weight:600;color:rgb(211,8,8)" class="text-left">Heading</span>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor</p>
+      </div>
     </div>
     <div class="item achievment-item" data-aos="fade-up"  style="background-image:url('./images/pic1.jpg')">
       <div class="darkbg-darker"><p class="achivement-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Velit, et vero necessitatibus veniam minus cupiditate fuga esse quod accusamus, natus atque. Praesentium quos quae magnam illum enim dicta voluptatibus assumenda. Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus, expedita! Provident quaerat veritatis sequi vero. Possimus voluptatem saepe doloribus optio fugiat quidem sapiente ullam tempora tenetur, molestias suscipit numquam id? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Assumenda minima iste non facere modi quasi fugit exercitationem est animi tempore culpa quam libero magni corrupti, eaque obcaecati molestias tenetur incidunt.</p>
       <a href="" class="p-2 achievment-readmorebtn">Read More..</a>
+      </div>
+      <div class="achivement-about">
+        <span style="font-size:1.3em;font-weight:600;color:rgb(211,8,8)" class="text-left">Heading</span>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor</p>
       </div>
     </div>
 </div>

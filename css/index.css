@@ -17,7 +17,7 @@
   text-decoration: none;
 }
 .owl-item {
-  height: 500px;
+  height: 600px;
 }
 .owl-item > .item {
   position: relative;
@@ -109,7 +109,6 @@ a:hover {
 .info {
   padding: 20px;
   position: relative;
-  background-color: white;
   display: flex;
   justify-content: space-between;
   margin-top: 30px;
@@ -310,6 +309,7 @@ a:hover {
 } */
 .achievments {
   position: relative;
+  height:700px
 }
 .achievment-item {
   position: relative;
@@ -401,7 +401,12 @@ a:hover {
   right: 10px;
   z-index: 1;
 }
-
+.achivement-about{
+  position: absolute;
+  top:100%;
+  padding: 10px;
+  margin:10px;
+}
 .workitem-img {
   position: relative;
   width: 100%;
@@ -452,7 +457,6 @@ a:hover {
 
 .volenteer {
   position: relative;
-  margin-top: 80px;
   margin-bottom: 100px;
   background-image: url("../images/pic5.jpg");
   background-position: center;
@@ -486,15 +490,17 @@ a:hover {
   background-color: rgba(0, 0, 0, 0.76);
 }
 .volenteer-form {
-  padding: 20px;
-  margin: 10px;
+  position: relative;
+  top:50%;
+  transform: translateY(-50%);
+  margin:0 10px;
   width: 70%;
 }
 .inputdiv {
   position: relative;
   width: 100%;
   height: 50px;
-  margin-top: 19px;
+  margin-bottom: 19px;
   background-color: transparent;
 }
 
