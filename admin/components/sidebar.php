@@ -1,6 +1,6 @@
 <div class="sidebar">
     <ul class="sidebar-item">
-        <li>Donations</li>
+        <li class="sidebar-donation">Donations</li>
         <li>Volenteer Applications</li>
         <li>Add Info</li>
         <li>Subscribed</li>
