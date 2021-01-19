@@ -23,7 +23,7 @@
         <div class="donation">
           <p class="text-center p-3 donation-head" style="font-size:1.5em">DONATIONS</p>
           <div class="donation-data container-sm">
-            <div class="donors">
+            <div id="donors" class="donors">
               <?php
                 $sql="SELECT COUNT(distinct d_number) from donations";
                 $req=mysqli_query($conn,$sql);
@@ -35,7 +35,7 @@
                ?>
               <p>Donors</p>
             </div>
-            <div class="donor-amount">
+            <div id="donor-amount" class="donor-amount">
               <?php
                 $sql="SELECT SUM(d_amount) FROM donations";
                 $req=mysqli_query($conn,$sql);
@@ -48,8 +48,8 @@
               <p>Donated Amount</p>
             </div>
           </div>
-          <div class="container-sm donation-table">
-            <table class="table table-bordered table-hover bg-white">
+          <div class="container-fluid-sm p-2 donation-table">
+            <table id="donation-table" class="table table-bordered table-hover bg-white">
               <thead class="">
                 <tr>
                   <th>ID</th>
@@ -72,7 +72,7 @@
                   }
                   $dataperpage=20;
                   $start_num=($page-1)*$dataperpage;
-                  $sql="SELECT donation_id,d_payment_id,d_name,d_number,d_mail,d_amount,d_payment_method,d_address,d_payment_date FROM donations order by d_payment_date ASC limit ".$start_num.",".$dataperpage;
+                  $sql="SELECT donation_id,d_payment_id,d_name,d_number,d_mail,d_amount,d_payment_method,d_address,d_payment_date FROM donations order by d_payment_date DESC ,donation_id DESC limit ".$start_num.",".$dataperpage;
                   $req=mysqli_query($conn,$sql);
                   if(mysqli_num_rows($req)>0){
                     while($data=mysqli_fetch_assoc($req)){

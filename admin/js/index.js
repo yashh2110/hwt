@@ -9,4 +9,9 @@ $(document).ready(function(){
     $(this).toggle();
     $(".down").toggle();
   })
+  setInterval(function(){
+    $("#donation-table").load("index #donation-table");
+    $("#donor-amount").load("index #donor-amount");
+    $("#donors").load("index #donors");
+  },3000)
 })
