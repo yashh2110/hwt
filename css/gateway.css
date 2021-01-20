@@ -27,13 +27,15 @@
   cursor: pointer;
 }
 .donate-cap {
+  position: relative;
   display: flex;
   justify-content: center;
 }
 .donate-cap-div {
+  position: relative;
   width: 80%;
-  padding: 10px;
-  margin-top: 170px;
+  top: 50%;
+  transform: translateY(-50%);
 }
 .gateway-div {
   position: relative;

@@ -188,21 +188,21 @@ $('.achievment-left').click(function() {
     $('.owl-achivement').trigger('prev.owl.carousel', [500]);
     $('.owl-achivement').trigger('play.owl.autoplay');
 })
-var flag = true;
-
+runner =(e,offset,tl,id)=>{
+  var flag = true;
   $(window).scroll(()=>{
     if(flag){
-    if($(window).scrollTop() >= 1400){
+    if($(window).scrollTop() >= offset){
       flag=false;
       var i=0;
       var timelimit=0;
       var runner = setInterval(()=>{
-        if(i>1999){
+        if(i>(e-1)){
           clearInterval(runner);
         }
-        $("#donors").html(i);
-        if(timelimit==300){
-          $("#donors").html("2000");
+        $(id).html(i);
+        if(timelimit==tl){
+          $(id).html(e);
           
           clearInterval(runner);
           }
@@ -210,8 +210,16 @@ var flag = true;
         i++;
       },10);
     }
+  }
+  })
 }
-})
+// runner(number,offset,timelimit,"#id");
+runner(2000,1400,400,"#donors");
+runner(1269,1400,300,"#saved");
+runner(259,1400,259,"#no-volunteer");
+runner(40000,1400,500,"#donated");
+
+
 
 
 

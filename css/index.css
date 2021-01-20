@@ -309,7 +309,7 @@ a:hover {
 } */
 .achievments {
   position: relative;
-  height:700px
+  height: 700px;
 }
 .achievment-item {
   position: relative;
@@ -401,11 +401,11 @@ a:hover {
   right: 10px;
   z-index: 1;
 }
-.achivement-about{
+.achivement-about {
   position: absolute;
-  top:100%;
+  top: 100%;
   padding: 10px;
-  margin:10px;
+  margin: 10px;
 }
 .workitem-img {
   position: relative;
@@ -477,7 +477,8 @@ a:hover {
   width: 80%;
   position: relative;
   left: 10%;
-  top: 50px;
+  top: 50%;
+  transform: translateY(-50%);
   margin-right: auto;
   margin-left: auto;
 }
@@ -491,9 +492,9 @@ a:hover {
 }
 .volenteer-form {
   position: relative;
-  top:50%;
+  top: 50%;
   transform: translateY(-50%);
-  margin:0 10px;
+  margin: 0 10px;
   width: 70%;
 }
 .inputdiv {
