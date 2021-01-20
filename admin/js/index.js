@@ -9,7 +9,10 @@ $(document).ready(function(){
     $(this).toggle();
     $(".down").toggle();
   })
-
+  $(".menu-icon").click(()=>{
+    $(".sidebar").toggleClass("menuclick");
+    $(".main").toggleClass("ml0")
+  })
   $(".sidebar-donation").click(()=>{
     $.ajax({
       url:"donation.php",

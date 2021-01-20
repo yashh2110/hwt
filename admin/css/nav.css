@@ -63,17 +63,7 @@ a:hover {
 .logo {
   padding: 15px;
 }
-.username {
-  padding: 15px;
-}
-.user {
-  position: absolute;
-  right: 10px;
-}
-.up,
-.down {
-  display: none;
-}
+
 /* NAV */
 @media screen and (max-width: 900px) {
   .navbutton {
@@ -82,24 +72,5 @@ a:hover {
   .nav-item {
     display: block;
     margin: 0;
-  }
-}
-@media screen and (max-width: 600px) {
-  .user {
-    position: absolute;
-    top: -100%;
-    right: 0;
-    width: 100%;
-    display: flex;
-    justify-content: flex-end;
-    background-color: white;
-    z-index: -10;
-    transition: all 0.3s ease-in;
-  }
-  .down {
-    display: initial;
-  }
-  .t100 {
-    top: 100%;
   }
 }

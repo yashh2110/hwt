@@ -6,13 +6,14 @@
       <span class="navs" id="s3"></span>
     </div>
     </div> -->
+    <div class="menu-icon">
+        <svg width="29" height="19" viewBox="0 0 92 59" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <rect width="73" height="13" rx="6.5" fill="#D30808"/>
+          <rect y="23" width="64" height="13" rx="6.5" fill="#D30808"/>
+          <rect y="46" width="92" height="13" rx="6.5" fill="#D30808"/>
+        </svg>  
+      </div>
     <div class="nav-item  pr-2">
     <a href="http://localhost/hwt/index"><h4  class="logo"><b style="color:rgb(211,8,8)">Human</b> Welfare Trust</h4></a>
-    </div>
-    <i class="down fas fa-arrow-down m-3"></i>
-    <i class="up fas fa-arrow-up m-3"></i>
-    <div class="user">
-      <span class="far fa-user username"> Yashwanth muddana</span>
-      <a href="#" class="fas fa-sign-out-alt username" style="color:rgb(211,8,8)">Logout</a>
     </div>
 </nav>

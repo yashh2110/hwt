@@ -19,8 +19,8 @@
   <body class="bg-light">
       <?php include "./components/navbar.php" ?>
       <?php include "./components/sidebar.php" ?>
-      <div id="main" class="main">
 
+      <div id="main" class="main">
       </div>
      <?php include "./components/scripts.php" ?>
      <script src="./js/index.js"></script>

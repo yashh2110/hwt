@@ -5,8 +5,22 @@
   text-decoration: none;
 }
 .main {
-  margin-left: 250px;
+  transition: all 0.5 ease-in-out;
+  margin-left: 300px;
   overflow: hidden;
+}
+.ml0 {
+  animation: mainslide 0.5s;
+  margin-left: 0;
+}
+@keyframes mainslide {
+  0% {
+    margin-left: 240px;
+  }
+
+  100% {
+    margin-left: 0px;
+  }
 }
 .donation-head {
   background-color: rgb(255, 255, 255);
@@ -40,4 +54,7 @@
 .data-navigation a {
   padding: 5px;
   margin: 5px;
+}
+.menu-icon {
+  padding: 10px;
 }
