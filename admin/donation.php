@@ -7,7 +7,7 @@
   }
  ?>
 <div class="donation">
-  <p class="text-center p-3 donation-head" style="font-size:1.5em">DONATIONS</p>
+  <p class="text-center p-3 secnav" style="font-size:1.5em">DONATIONS</p>
   <div class="donation-data container-sm">
     <div id="donors" class="donors">
       <?php
@@ -34,7 +34,7 @@
       <p>Donated Amount</p>
     </div>
   </div>
-  <div class="container-fluid-sm p-2 donation-table">
+  <div class="container-fluid-sm p-2 custom-table">
     <table id="donation-table" class="table table-bordered table-hover bg-white">
       <thead class="">
         <tr>
@@ -56,7 +56,7 @@
           }else{
             $page=1;
           }
-          $dataperpage=20;
+          $dataperpage=2;
           $start_num=($page-1)*$dataperpage;
           $sql="SELECT donation_id,d_payment_id,d_name,d_number,d_mail,d_amount,d_payment_method,d_address,d_payment_date FROM donations order by d_payment_date DESC ,donation_id DESC limit ".$start_num.",".$dataperpage;
           $req=mysqli_query($conn,$sql);
@@ -89,7 +89,7 @@
         $num_btns=ceil($total_data_count/$dataperpage);
         for($i=1;$i<=$num_btns;$i++){
        ?>
-       <a href="index?page=<?php echo $i ?>"><?php echo $i ?></a>
+       <a onclick="ajax_pagination(<?php echo $i ?>,'donation')"><?php echo $i ?></a>
        <?php
         }
         ?>

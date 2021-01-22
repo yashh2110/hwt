@@ -11,19 +11,47 @@ $(document).ready(function(){
   })
   $(".menu-icon").click(()=>{
     $(".sidebar").toggleClass("menuclick");
-    $(".main").toggleClass("ml0")
+    if($(window).width()>768){
+    $(".main").toggleClass("ml0");
+    }
   })
+  if($(window).width()< 768){
+    $(".sidebar-item>li").click(()=>{
+      $(".sidebar").toggleClass("menuclick")
+    })
+  }
   $(".sidebar-donation").click(()=>{
     $.ajax({
       url:"donation.php",
       success:(e)=>{
       $("#main").html(e);
-      setInterval(()=>{
-        $("#donation-table").load("donation #donation-table");
-        $("#donor-amount").load("donation #donor-amount");
-        $("#donors").load("donation #donors");
-      },3000)
+      
       }
     })
   })
+  $(".sidebar-volenteer").click(()=>{
+    $.ajax({
+      url:"volenteer.php",
+      success:(e)=>{
+        $("#main").html(e);
+      }
+    })
+  })
+  $(".sidebar-subscriber").click(()=>{
+    $.ajax({
+      url:"subscriber.php",
+      success:(e)=>{
+        $("#main").html(e);
+      }
+    })
+  })
+  ajax_pagination=(i,page)=>{
+    $.ajax({
+      url:page+"?page="+i,
+      success:(e)=>{
+        $("#main").html(e);
+
+      }
+    })
+  }
 })
