@@ -25,7 +25,9 @@ $(document).ready(function(){
       url:"donation.php",
       success:(e)=>{
       $("#main").html(e);
-      
+      refreshTable = setInterval(()=>{
+        $("#donation-table-div").load("donation?page=1 #donation-table-div");
+      },3000)
       }
     })
   })
@@ -46,11 +48,14 @@ $(document).ready(function(){
     })
   })
   ajax_pagination=(i,page)=>{
+    clearInterval(refreshTable);
     $.ajax({
       url:page+"?page="+i,
       success:(e)=>{
         $("#main").html(e);
-
+        refreshTable = setInterval(()=>{
+          $("#donation-table-div").load("donation?page="+i+" #donation-table-div");
+        },3000)
       }
     })
   }

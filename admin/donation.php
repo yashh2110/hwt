@@ -34,7 +34,7 @@
       <p>Donated Amount</p>
     </div>
   </div>
-  <div class="container-fluid-sm p-2 custom-table">
+  <div class="container-fluid-sm p-2 custom-table " id="donation-table-div">
     <table id="donation-table" class="table table-bordered table-hover bg-white">
       <thead class="">
         <tr>

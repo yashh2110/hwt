@@ -107,10 +107,9 @@
 <div class="container-fluid-sm mt-5" style="position:relative">
   <div class="work">
     <div class="darkbg">
-      <div class="container-sm workinner">
+      <div class="container-fluid-sm workinner">
         <h3 class="text-center m-2 text-white headings">Our Focus</h3>
-        <br>
-        <br>
+
         <div class="owl-carousel owl-work owl-theme">
           <div class="">
             <div class="pc-carousel-imgdiv">
@@ -156,11 +155,7 @@
 
     </div>
   </div>
-  <div class="pc-carousel-nav input-group text-white">
 
-            <i class="pc-carousel-left fas fa-angle-left d-block mr-auto p-5 ml-4"></i>
-            <i class="pc-carousel-right p-5 fas fa-angle-right ml-auto mr-4  d-block"></i>
-        </div>
 </div>
 
 <!-- achivements -->

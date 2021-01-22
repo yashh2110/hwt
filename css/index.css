@@ -222,24 +222,31 @@ a:hover {
   position: relative;
   overflow: hidden;
 }
+.workinner {
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 90%;
+}
 .pc-carousel {
   overflow: hidden;
   width: 98%;
 }
-.pc-carousel-1div {
+/* .pc-carousel-1div {
   position: relative;
   left: 0px;
   width: 10000000%;
   display: flex;
   transition: all 1s ease-in-out;
-}
+} */
 
 .pc-carousel-imgdiv {
   position: relative;
-  top: 0;
-  width: 350px;
+  top: 70px;
+  width: 400px;
   height: 450px;
   margin: 8px;
+  border-radius: 5px;
   background-color: white;
   transition: all 0.2s ease-in;
 }
@@ -247,8 +254,9 @@ a:hover {
   transform: scale(1.2);
 } */
 .pc-carousel-imgdiv:hover {
-  top: -10px;
+  top: 60px;
   z-index: 1000;
+  box-shadow: 0 5px 10px 7px rgba(202, 202, 202, 0.596);
 }
 .pc-carousel-nav {
   position: absolute;
@@ -410,7 +418,7 @@ a:hover {
 .workitem-img {
   position: relative;
   width: 100%;
-
+  border-radius: 5px 5px 0 0;
   height: 50%;
   background-position: center;
   background-repeat: no-repeat;
@@ -440,6 +448,7 @@ a:hover {
 .workitem-donatebtn {
   padding: 10px;
   color: white;
+  border-radius: 5px;
   background-color: rgba(211, 8, 8, 0.877);
   transition: all 0.3 ease-in-out;
 }

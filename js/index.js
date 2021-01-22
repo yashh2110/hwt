@@ -146,7 +146,8 @@ $('.owl-achivement').owlCarousel({
 
 $('.owl-work').owlCarousel({
 loop:true,
-margin:10,
+margin:50,
+center:true,
 autoplay:true,
 autoplayTimeout:6000,
 autoplayHoverPause:true,
@@ -163,7 +164,7 @@ responsive:{
         items:2
     },
     1200:{
-      items:3
+      items:2
     }
 
 }
