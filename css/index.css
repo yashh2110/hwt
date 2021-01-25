@@ -99,6 +99,7 @@ a:hover {
 .homeimgitem {
   width: 500px;
   margin: 20px;
+  border-radius: 5px;
 }
 .homeimgitem-text {
   padding-top: 40px;
@@ -268,7 +269,18 @@ a:hover {
   font-size: 2em;
   opacity: 0.7;
 }
-
+.pc-carousel-left {
+  position: absolute;
+  top: 50%;
+  left: -40px;
+  z-index: 1;
+}
+.pc-carousel-right {
+  position: absolute;
+  top: 50%;
+  right: -40px;
+  z-index: 1;
+}
 /* .achivement-carousel {
   position: relative;
   height: 70vh;
@@ -608,6 +620,18 @@ a:hover {
 @media screen and (max-width: 768px) {
   .achievment-item {
     width: 300px;
+  }
+  .workinner {
+    width: 100%;
+  }
+  .pc-carousel-left {
+    left: 0;
+  }
+  .pc-carousel-right {
+    right: 0;
+  }
+  .pc-carousel-imgdiv {
+    width: 320px;
   }
 }
 @media screen and (max-width: 370px) {

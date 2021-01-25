@@ -21,21 +21,32 @@ $(document).ready(function(){
     })
   }
   $(".sidebar-donation").click(()=>{
+    if(typeof(refreshTable)==="function"){
+      clearInterval(refreshTable);
+  
+      }
     $.ajax({
       url:"donation.php",
       success:(e)=>{
       $("#main").html(e);
       refreshTable = setInterval(()=>{
-        $("#donation-table-div").load("donation?page=1 #donation-table-div");
+        $("#donation-table").load("donation?page=1 #donation-table");
       },3000)
       }
     })
   })
   $(".sidebar-volenteer").click(()=>{
+    if(typeof(refreshTable)==="function"){
+      clearInterval(refreshTable);
+  
+      }
     $.ajax({
       url:"volenteer.php",
       success:(e)=>{
         $("#main").html(e);
+        refreshTable =setInterval(()=>{
+          $("#volenteer-table").load("volenteer?page=1 #volenteer-table");
+        },3000);
       }
     })
   })
@@ -48,13 +59,16 @@ $(document).ready(function(){
     })
   })
   ajax_pagination=(i,page)=>{
+
     clearInterval(refreshTable);
+    
+
     $.ajax({
       url:page+"?page="+i,
       success:(e)=>{
         $("#main").html(e);
         refreshTable = setInterval(()=>{
-          $("#donation-table-div").load("donation?page="+i+" #donation-table-div");
+          $("#"+page+"-table").load(page+"?page="+i+" #"+page+"-table");
         },3000)
       }
     })

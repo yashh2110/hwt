@@ -56,7 +56,7 @@
           }else{
             $page=1;
           }
-          $dataperpage=2;
+          $dataperpage=20;
           $start_num=($page-1)*$dataperpage;
           $sql="SELECT donation_id,d_payment_id,d_name,d_number,d_mail,d_amount,d_payment_method,d_address,d_payment_date FROM donations order by d_payment_date DESC ,donation_id DESC limit ".$start_num.",".$dataperpage;
           $req=mysqli_query($conn,$sql);
