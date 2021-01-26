@@ -20,6 +20,18 @@ $(document).ready(function(){
       $(".sidebar").toggleClass("menuclick")
     })
   }
+  $("#focus_img").change(function(){
+    $("#focus_imgholder").attr("src",URL.createObjectURL(event.target.files[0]));
+    $(".focus_img_text").hide();
+  })
+  $("#gallery_img").change(function(){
+    $(".gallery_img_text").hide();
+    $(".gallery_img_display").html("");
+    var files =$("#gallery_img")[0].files;
+    for(var i=0;i<files.length;i++){
+      $(".gallery_img_display").prepend("<img width='150px' height='150' style='border-radius:10px;margin:2px 2px 0 0' src='"+URL.createObjectURL(files[i])+"' alt='img'>");
+    }
+  })
   $(".sidebar-donation").click(()=>{
     if(typeof(refreshTable)==="function"){
       clearInterval(refreshTable);
@@ -73,4 +85,12 @@ $(document).ready(function(){
       }
     })
   }
+  $(".sidebar-add-info").click(()=>{
+    $.ajax({
+      url:"addinfo.php",
+      success:(e)=>{
+        $("#main").html(e);
+      }
+    })
+  })
 })

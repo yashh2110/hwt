@@ -86,13 +86,15 @@ input,
 textarea {
   display: block;
   width: 100%;
-  border: 2px solid rgba(128, 128, 128, 0.493);
+  border: 2px solid rgba(128, 128, 128, 0.295);
   border-radius: 10px;
   padding: 10px;
+  transition: all 0.2s ease-in-out;
 }
 input:focus,
 textarea:focus {
   outline: none;
+  border: 3px solid rgba(211, 8, 8, 0.568);
 }
 .basicbtn {
   color: white;
@@ -105,6 +107,54 @@ button {
 }
 button:focus {
   outline: none;
+}
+.input_title {
+  font-size: 1.1em;
+  font-weight: 500;
+}
+.img_display {
+  position: relative;
+  width: 150px;
+  height: 150px;
+  border-radius: 10px;
+  overflow: hidden;
+  left: 50%;
+  transform: translateX(-50%);
+  transition: all 0.4s ease-in-out;
+}
+.img_display:hover .img_text {
+  background-color: rgba(0, 0, 0, 0.6);
+}
+.darkbg {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+.img_text > p {
+  position: relative;
+  top: 50%;
+  color: white;
+  font-weight: 400;
+  transform: translateY(-50%);
+}
+#imgholder {
+  width: 150px;
+  height: 150px;
+}
+.gallery-lable {
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 10px;
+  min-width: 150px;
+  min-height: 150px;
+  transition: all 0.4s ease-in-out;
+}
+.gallery-lable:hover .img_text {
+  background-color: rgba(0, 0, 0, 0.6);
 }
 @media screen and (max-width: 768px) {
   .main {
