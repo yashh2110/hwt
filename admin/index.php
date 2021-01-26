@@ -1,11 +1,3 @@
-<?php
-  session_start();
-  include "dbconn.php";
-  // if(isset($_SESSION["id"])){
-  if(!$conn){
-    die(mysqli_connect_error());
-  }
- ?>
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
@@ -21,6 +13,9 @@
       <?php include "./components/sidebar.php" ?>
 
       <div id="main" class="main">
+      <?php 
+        include "./addinfo.php";
+      ?>
       </div>
      <?php include "./components/scripts.php" ?>
      <script src="./js/index.js"></script>

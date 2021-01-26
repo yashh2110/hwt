@@ -27,7 +27,7 @@
         $req=mysqli_query($conn,$sql);
         if($amount=mysqli_fetch_row($req)){
        ?>
-      <p class="text-center"><b><?php echo $amount[0] ?> INR</b></p>
+      <p class="text-center"><b><?php echo $amount[0] ?> <span style="color:rgb(211,8,8)">INR</span></b></p>
       <?php
     }
        ?>
