@@ -67,7 +67,7 @@ a:hover {
   position: relative;
   padding: 10px;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-around;
   align-items: center;
   flex-wrap: wrap;
 }
@@ -123,7 +123,10 @@ button:focus {
   transition: all 0.4s ease-in-out;
 }
 .img_display:hover .img_text {
-  background-color: rgba(0, 0, 0, 0.6);
+  background-color: rgba(211, 8, 8, 0.8);
+}
+.img_display:hover .img_text p {
+  color: white;
 }
 .darkbg {
   position: absolute;
@@ -131,13 +134,13 @@ button:focus {
   height: 100%;
   top: 0;
   left: 0;
-  background-color: rgba(0, 0, 0, 0.4);
+  /* background-color: rgba(0, 0, 0, 0.4); */
 }
 .img_text > p {
   position: relative;
   top: 50%;
-  color: white;
-  font-weight: 400;
+  color: rgba(0, 0, 0, 0.842);
+  font-weight: 500;
   transform: translateY(-50%);
 }
 #imgholder {
@@ -154,7 +157,10 @@ button:focus {
   transition: all 0.4s ease-in-out;
 }
 .gallery-lable:hover .img_text {
-  background-color: rgba(0, 0, 0, 0.6);
+  background-color: rgba(211, 8, 8, 0.8);
+}
+.gallery-lable:hover .img_text p {
+  color: white;
 }
 .gallery_img_display {
   display: flex;

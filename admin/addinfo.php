@@ -9,7 +9,7 @@
  <div class="container-fluid-sm addinfo">
     <div class="ourfocus">
         <p class="text-center" style="font-weight: 500; font-size:1.3em ;line-height:15px; margin-bottom:25px"> OUR <span style="color:rgb(211,8,8)">FOCUS</span> </p>
-        <form class="form-group" enctype="multipart/form-data">
+        <form class="form-group" action="./api/focus.php" method="post" enctype="multipart/form-data">
             <label for="focus_img" class="focus_lable img_display">
               <div class="focus_img_display">
                 <img src="./images/image_rep.jpg" id="focus_imgholder" width="150" height="150" alt="img">
@@ -65,7 +65,7 @@
             <label for="gallery_img" class="gallery-lable">
               <div class="gallery_img_display">
                 <img src="./images/image_rep.jpg" style="border-radius:10px" width="150" height="150" id="gallery_imgholder" alt="img">
-                <div class="darkbg gallery_img_text img_text">
+                <div class="darkbg gallery_img_text img_text" style="border-radius:10px">
                  <p class="text-center">Upload Images <br> ctrl + select <br> for mutiple select</p> 
                 </div>
               </div>

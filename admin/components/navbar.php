@@ -14,6 +14,6 @@
         </svg>  
       </div>
     <div class="nav-item  pr-2">
-    <a href="http://localhost/hwt/index"><h4  class="logo"><b style="color:rgb(211,8,8)">Human</b> Welfare Trust</h4></a>
+    <a href="http://localhost/hwt/admin"><h4  class="logo"><b style="color:rgb(211,8,8)">Human</b> Welfare Trust</h4></a>
     </div>
 </nav>
