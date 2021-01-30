@@ -9,7 +9,7 @@
  <div class="container-fluid-sm addinfo">
     <div class="ourfocus">
         <p class="text-center" style="font-weight: 500; font-size:1.3em ;line-height:15px; margin-bottom:25px"> OUR <span style="color:rgb(211,8,8)">FOCUS</span> </p>
-        <form class="form-group" action="./api/focus.php" method="post" enctype="multipart/form-data">
+        <form class="form-group" id="focus" enctype="multipart/form-data">
             <label for="focus_img" class="focus_lable img_display">
               <div class="focus_img_display">
                 <img src="./images/image_rep.jpg" id="focus_imgholder" width="150" height="150" alt="img">
@@ -18,10 +18,10 @@
                 </div>
               </div>
             </label>
-            <input type="file" class="d-none mt-2"  value="" name="focus_img" id="focus_img">
-            <input type="text" class=" mt-2 input_title" name="focus_title" id="focus_title" placeholder="Title">
-            <textarea class=" mt-2" name="focus_story" id="focus_story" placeholder="Story" cols="30" rows="4"></textarea>
-            <button class="mt-2 d-block ml-auto mr-auto basicbtn">Post</button>
+            <input type="file" class="d-none mt-2"  value="" name="focus_img" id="focus_img" required>
+            <input type="text" class=" mt-2 input_title" name="focus_title" id="focus_title" placeholder="Title" required>
+            <textarea class=" mt-2" name="focus_story" id="focus_story" placeholder="Story" cols="30" rows="4" required></textarea>
+            <button class="mt-2 d-block ml-auto mr-auto basicbtn" type="submit" id="f_btn">Post</button>
         </form>
     </div>
     <div class="ourwork">
@@ -76,3 +76,4 @@
         </form>
     </div>
  </div>
+ <script src="./js/addinfo.js"></script>
