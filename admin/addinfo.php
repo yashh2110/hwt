@@ -26,7 +26,7 @@
     </div>
     <div class="ourwork">
         <p class="text-center" style="font-weight: 500; font-size:1.3em ;line-height:15px; margin-bottom:25px"> OUR <span style="color:rgb(211,8,8)">WORK</span> </p>
-        <form class="form-group" enctype="multipart/form-data">
+        <form class="form-group" id="work" enctype="multipart/form-data">
             <label for="work_img" class="work_lable img_display">
               <div class="work_img_display">
                 <img src="./images/image_rep.jpg" id="work_imgholder" width="150" height="150" alt="img">
@@ -38,7 +38,7 @@
             <input type="file" class="d-none mt-2"  value="" name="work_img" id="work_img">
             <input type="text" class=" mt-2 input_title" name="work_title" id="work_title" placeholder="Title">
             <textarea class=" mt-2" name="work_story" id="work_story" placeholder="Story" cols="30" rows="4"></textarea>
-            <button class="mt-2 d-block ml-auto mr-auto basicbtn">Post</button>
+            <button class="mt-2 d-block ml-auto mr-auto basicbtn" type="submit">Post</button>
         </form>
     </div>
 
