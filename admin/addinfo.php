@@ -60,7 +60,7 @@
     </div>
     <div class="gallery">
     <p class="text-center" style="font-weight: 500; font-size:1.3em ;line-height:15px; margin-bottom:25px"><span style="color:rgb(211,8,8)">GALLERY</span> </p>
-        <form class="form-group" enctype="multipart/form-data">
+        <form class="form-group" id="gallery" enctype="multipart/form-data">
             <label for="gallery_img" class="gallery-lable">
               <div class="gallery_img_display">
                 <img src="./images/image_rep.jpg" style="border-radius:10px" width="150" height="150" id="gallery_imgholder" alt="img">
@@ -69,7 +69,7 @@
                 </div>
               </div>
             </label>
-            <input type="file" class="d-none mt-2"  value="" name="gallery_img" id="gallery_img" multiple>
+            <input type="file" class="d-none mt-2"  value="" name="files[]" id="gallery_img" multiple>
             
             <button class="mt-2 d-block ml-auto mr-auto basicbtn">Post</button>
         </form>
