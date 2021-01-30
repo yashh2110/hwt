@@ -36,4 +36,23 @@ $(document).ready(()=>{
         })
 
     })
+    $("#achivement").submit((e)=>{
+        e.preventDefault();
+        var form=$(e.target).closest("form");
+        var fd= new FormData(form[0]);
+        $.ajax({
+            url:"./api/achivement.php",
+            type: "POST",
+            data:fd,
+            processData:false,
+            contentType: false,
+            success:(e)=>{
+                alert(e);
+                $("#achivements")[0].reset();
+                $("#achivements_imgholder").attr("src","./images/image_rep.jpg");
+                $(".achivements_img_text").show()
+            }
+        })
+
+    })
 })

@@ -24,6 +24,14 @@ $(document).ready(function(){
     $("#focus_imgholder").attr("src",URL.createObjectURL(event.target.files[0]));
     $(".focus_img_text").hide();
   })
+  $("#work_img").change(function(){
+    $("#work_imgholder").attr("src",URL.createObjectURL(event.target.files[0]));
+    $(".work_img_text").hide();
+  })
+  $("#achivements_img").change(function(){
+    $("#achivements_imgholder").attr("src",URL.createObjectURL(event.target.files[0]));
+    $(".achivements_img_text").hide();
+  })
   $("#gallery_img").change(function(){
     $(".gallery_img_text").hide();
     $(".gallery_img_display").html("");

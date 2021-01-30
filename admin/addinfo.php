@@ -41,10 +41,9 @@
             <button class="mt-2 d-block ml-auto mr-auto basicbtn" type="submit">Post</button>
         </form>
     </div>
-
     <div class="achivements">
       <p class="text-center" style="font-weight: 500; font-size:1.3em ;line-height:15px; margin-bottom:25px"><span style="color:rgb(211,8,8)">ACHIVEMENTS</span> </p>
-          <form class="form-group" enctype="multipart/form-data">
+          <form class="form-group" id="achivement" enctype="multipart/form-data">
               <label for="achivements_img" class="achivement_lable img_display">
                 <div class="achivements_img_display">
                   <img src="./images/image_rep.jpg" id="achivements_imgholder" width="150" height="150" alt="img">
