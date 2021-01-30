@@ -12,6 +12,8 @@ $(document).ready(()=>{
             success:(e)=>{
                 alert(e);
                 $("#focus")[0].reset();
+                $("#focus_imgholder").attr("src","./images/image_rep.jpg");
+                $(".focus_img_text").show()
             }
         })
     })
