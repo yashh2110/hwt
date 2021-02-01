@@ -1,3 +1,12 @@
+<?php
+  session_start();
+  include "./dbconn.php";
+  if(!$conn){
+    alert(mysqli_connect_error());
+  }
+
+?>
+
 <html>
 <head>
   <meta charset="utf-8"/>
@@ -111,47 +120,30 @@
         <h3 class="text-center m-2 text-white headings">Our Focus</h3>
 
         <div class="owl-carousel owl-work owl-theme">
-          <div class="">
-            <div class="pc-carousel-imgdiv">
-              <div class="workitem-img" style="background-image: url('./images/pic4.jpg')"></div>
-              <div class="workitem-info">
-                <p class="workitem-heading"><b>Help Ushain</b></p>
-                <p class="workitem-story">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat, Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta, aperiam. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cupiditate nesciunt labore maxime quos, dicta quibusdam et sapiente obcaecati, doloremque nihil odit magni eum saepe quaerat animi laudantium excepturi voluptatibus similique voluptatum dolores, distinctio natus dolorum? Possimus voluptate voluptates ab aperiam?</p>
-                <div class="workitem-btns">
-                    <a class="workitem-readmorebtn" href="">Read More</a>
-                    <a class="workitem-donatebtn" href="http://localhost/hwt/donate">Donate</a>
+        <?php
+          $sql="SELECT f_title,f_story,f_img from focus order by f_id desc limit 0,30";
+          $res=mysqli_query($conn,$sql);
+          if(mysqli_num_rows($res)>0){
+            while($data=mysqli_fetch_assoc($res)){
+        ?>
+              <div class="">
+                <div class="pc-carousel-imgdiv">
+                  <div class="workitem-img" style="background-image: url('./admin/focusimg/<?php echo $data['f_img'] ?>')"></div>
+                  <div class="workitem-info">
+                    <p class="workitem-heading"><b><?php echo $data['f_title'] ?></b></p>
+                    <p class="workitem-story"><?php echo $data['f_story'] ?></p>
+                    <div class="workitem-btns">
+                        <a class="workitem-readmorebtn" href="">Read More</a>
+                        <a class="workitem-donatebtn" href="http://localhost/hwt/donate">Donate</a>
+                    </div>
+                  </div>
                 </div>
               </div>
-          </div>
+          <?php 
+            }
+          }
+          ?>
         </div>
-        <div class="">
-          <div class="pc-carousel-imgdiv">
-            <div class="workitem-img" style="background-image: url('./images/pic3.jpg')"></div>
-            <div class="workitem-info">
-              <p class="workitem-heading"><b>Help Raghav</b></p>
-              <p class="workitem-story">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat, Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta, aperiam. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cupiditate nesciunt labore maxime quos, dicta quibusdam et sapiente obcaecati, doloremque nihil odit magni eum saepe quaerat animi laudantium excepturi voluptatibus similique voluptatum dolores, distinctio natus dolorum? Possimus voluptate voluptates ab aperiam?</p>
-              <div class="workitem-btns">
-                  <a class="workitem-readmorebtn" href="">Read More</a>
-                  <a class="workitem-donatebtn" href="http://localhost/hwt/donate">Donate</a>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="">
-          <div class="pc-carousel-imgdiv">
-            <div class="workitem-img" style="background-image: url('./images/pic2.png')"></div>
-            <div class="workitem-info">
-              <p class="workitem-heading"><b>Help ramayya</b></p>
-              <p class="workitem-story">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat, Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta, aperiam. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cupiditate nesciunt labore maxime quos, dicta quibusdam et sapiente obcaecati, doloremque nihil odit magni eum saepe quaerat animi laudantium excepturi voluptatibus similique voluptatum dolores, distinctio natus dolorum? Possimus voluptate voluptates ab aperiam?</p>
-              <div class="workitem-btns">
-                  <a class="workitem-readmorebtn" href="">Read More</a>
-                  <a class="workitem-donatebtn" href="http://localhost/hwt/donate">Donate</a>
-              </div>
-            </div>
-          </div>
-        </div>
-
-      </div>
       <svg class="pc-carousel-left" width="54" height="54" viewBox="0 0 54 54" fill="none" xmlns="http://www.w3.org/2000/svg">
       <circle cx="27" cy="27" r="27" transform="rotate(180 27 27)" fill="white"/>
       <path d="M14.2929 26.2929C13.9024 26.6834 13.9024 27.3166 14.2929 27.7071L20.6569 34.0711C21.0474 34.4616 21.6805 34.4616 22.0711 34.0711C22.4616 33.6805 22.4616 33.0474 22.0711 32.6569L16.4142 27L22.0711 21.3431C22.4616 20.9526 22.4616 20.3195 22.0711 19.9289C21.6805 19.5384 21.0474 19.5384 20.6569 19.9289L14.2929 26.2929ZM39 26L15 26V28L39 28V26Z" fill="#D30808"/>
@@ -172,61 +164,26 @@
   <br>
 <h3 class="text-center headings pt-2" style="color:rgb(211, 8, 8);">Our Achievments</h3>
     <div class="owl-carousel owl-achivement owl-theme">
-    <div class="item achievment-item" data-aos="fade-up"  style="background-image:url('./images/pic1.jpg')">
-      <div class="darkbg-darker">
-        <p class="achivement-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Velit, et vero necessitatibus veniam minus cupiditate fuga esse quod accusamus, natus atque. Praesentium quos quae magnam illum enim dicta voluptatibus assumenda. Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus, expedita! Provident quaerat veritatis sequi vero. Possimus voluptatem saepe doloribus optio fugiat quidem sapiente ullam tempora tenetur, molestias suscipit numquam id? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Assumenda minima iste non facere modi quasi fugit exercitationem est animi tempore culpa quam libero magni corrupti, eaque obcaecati molestias tenetur incidunt.</p>
-        <a href="" class="p-2 achievment-readmorebtn">Read More..</a>
+    <?php
+          $sql="SELECT a_title,a_story,a_img from achivements order by a_id desc limit 0,30";
+          $res=mysqli_query($conn,$sql);
+          if(mysqli_num_rows($res)>0){
+            while($data=mysqli_fetch_assoc($res)){
+        ?>
+        <div class="item achievment-item" data-aos="fade-up"  style="background-image:url('./admin/achivementimg/<?php echo $data['a_img'] ?>')">
+          <div class="darkbg-darker">
+            <p class="achivement-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Velit, et vero necessitatibus veniam minus cupiditate fuga esse quod accusamus, natus atque. Praesentium quos quae magnam illum enim dicta voluptatibus assumenda. Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus, expedita! Provident quaerat veritatis sequi vero. Possimus voluptatem saepe doloribus optio fugiat quidem sapiente ullam tempora tenetur, molestias suscipit numquam id? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Assumenda minima iste non facere modi quasi fugit exercitationem est animi tempore culpa quam libero magni corrupti, eaque obcaecati molestias tenetur incidunt.</p>
+            <a href="" class="p-2 achievment-readmorebtn">Read More..</a>
+          </div>
+          <div class="achivement-about">
+            <span style="font-size:1.3em;font-weight:600;color:rgb(211,8,8)" class="text-left"><?php echo $data['a_title'] ?></span>
+            <p><?php echo $data['a_story'] ?></p>
+          </div>
       </div>
-      <div class="achivement-about">
-        <span style="font-size:1.3em;font-weight:600;color:rgb(211,8,8)" class="text-left">Heading</span>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor</p>
-      </div>
-  </div>
-    <div class="item achievment-item" data-aos="fade-up"  style="background-image:url('./images/pic2.png')">
-      <div class="darkbg-darker"><p class="achivement-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Velit, et vero necessitatibus veniam minus cupiditate fuga esse quod accusamus, natus atque. Praesentium quos quae magnam illum enim dicta voluptatibus assumenda. Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus, expedita! Provident quaerat veritatis sequi vero. Possimus voluptatem saepe doloribus optio fugiat quidem sapiente ullam tempora tenetur, molestias suscipit numquam id? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Assumenda minima iste non facere modi quasi fugit exercitationem est animi tempore culpa quam libero magni corrupti, eaque obcaecati molestias tenetur incidunt.</p>
-      <a href="" class="p-2 achievment-readmorebtn">Read More..</a>
-      </div>
-      <div class="achivement-about">
-        <span style="font-size:1.3em;font-weight:600;color:rgb(211,8,8)" class="text-left">Heading</span>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor</p>
-      </div>
-    </div>
-    <div class="item achievment-item" data-aos="fade-up"  style="background-image:url('./images/pic3.jpg')">
-      <div class="darkbg-darker"><p class="achivement-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Velit, et vero necessitatibus veniam minus cupiditate fuga esse quod accusamus, natus atque. Praesentium quos quae magnam illum enim dicta voluptatibus assumenda. Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus, expedita! Provident quaerat veritatis sequi vero. Possimus voluptatem saepe doloribus optio fugiat quidem sapiente ullam tempora tenetur, molestias suscipit numquam id? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Assumenda minima iste non facere modi quasi fugit exercitationem est animi tempore culpa quam libero magni corrupti, eaque obcaecati molestias tenetur incidunt.</p>
-      <a href="" class="p-2 achievment-readmorebtn">Read More..</a>
-      </div>
-      <div class="achivement-about">
-        <span style="font-size:1.3em;font-weight:600;color:rgb(211,8,8)" class="text-left">Heading</span>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor</p>
-      </div>
-    </div>
-    <div class="item achievment-item" data-aos="fade-up"  style="background-image:url('./images/pic5.jpg')">
-      <div class="darkbg-darker"><p class="achivement-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Velit, et vero necessitatibus veniam minus cupiditate fuga esse quod accusamus, natus atque. Praesentium quos quae magnam illum enim dicta voluptatibus assumenda. Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus, expedita! Provident quaerat veritatis sequi vero. Possimus voluptatem saepe doloribus optio fugiat quidem sapiente ullam tempora tenetur, molestias suscipit numquam id? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Assumenda minima iste non facere modi quasi fugit exercitationem est animi tempore culpa quam libero magni corrupti, eaque obcaecati molestias tenetur incidunt.</p>
-      <a href="" class="p-2 achievment-readmorebtn">Read More..</a>
-      </div>
-      <div class="achivement-about">
-        <span style="font-size:1.3em;font-weight:600;color:rgb(211,8,8)" class="text-left">Heading</span>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor</p>
-      </div>
-    </div>
-    <div class="item achievment-item" data-aos="fade-up"  style="background-image:url('./images/pic6.jpg')">
-      <div class="darkbg-darker"><p class="achivement-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Velit, et vero necessitatibus veniam minus cupiditate fuga esse quod accusamus, natus atque. Praesentium quos quae magnam illum enim dicta voluptatibus assumenda. Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus, expedita! Provident quaerat veritatis sequi vero. Possimus voluptatem saepe doloribus optio fugiat quidem sapiente ullam tempora tenetur, molestias suscipit numquam id? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Assumenda minima iste non facere modi quasi fugit exercitationem est animi tempore culpa quam libero magni corrupti, eaque obcaecati molestias tenetur incidunt.</p>
-      <a href="" class="p-2 achievment-readmorebtn">Read More..</a>
-      </div>
-      <div class="achivement-about">
-        <span style="font-size:1.3em;font-weight:600;color:rgb(211,8,8)" class="text-left">Heading</span>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor</p>
-      </div>
-    </div>
-    <div class="item achievment-item" data-aos="fade-up"  style="background-image:url('./images/pic1.jpg')">
-      <div class="darkbg-darker"><p class="achivement-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Velit, et vero necessitatibus veniam minus cupiditate fuga esse quod accusamus, natus atque. Praesentium quos quae magnam illum enim dicta voluptatibus assumenda. Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus, expedita! Provident quaerat veritatis sequi vero. Possimus voluptatem saepe doloribus optio fugiat quidem sapiente ullam tempora tenetur, molestias suscipit numquam id? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Assumenda minima iste non facere modi quasi fugit exercitationem est animi tempore culpa quam libero magni corrupti, eaque obcaecati molestias tenetur incidunt.</p>
-      <a href="" class="p-2 achievment-readmorebtn">Read More..</a>
-      </div>
-      <div class="achivement-about">
-        <span style="font-size:1.3em;font-weight:600;color:rgb(211,8,8)" class="text-left">Heading</span>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor</p>
-      </div>
-    </div>
+      <?php 
+            }
+          }
+      ?>
 </div>
     <svg class="achievment-left" width="54" height="54" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
     <circle cx="17.0004" cy="17" r="17" transform="rotate(-180 17.0004 17)" fill="#D30808"/>

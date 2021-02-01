@@ -21,9 +21,12 @@
         <div class="gateway-cap-img">
         <div class="darkbg donate-cap">
           <div class="donate-cap-div">
-          <p class=" headings text-white " style="font-size:2.5em"><span style="color:rgb(211,8,8)">Small</span>  Amounts For You Can Make A Big Difference In There Lifes
-          </p>
-          <p class="text-white" style="font-weight:600;font-size:1.4em" >Please Donate The Amount You Wish!</p>
+            <div>
+                <p class=" headings text-white " style="font-size:2.5em"><span style="color:rgb(211,8,8)">Small</span>  Amounts For You Can Make A Big Difference In There Lifes
+              </p>
+              <p class="text-white" style="font-weight:600;font-size:1.4em" >Please Donate The Amount You Wish!</p>
+            </div>
+
           </div>
 
         </div>

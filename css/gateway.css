@@ -34,8 +34,9 @@
 .donate-cap-div {
   position: relative;
   width: 80%;
-  top: 50%;
-  transform: translateY(-50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .gateway-div {
   position: relative;
