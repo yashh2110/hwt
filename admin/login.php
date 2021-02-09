@@ -1,3 +1,7 @@
+<?php 
+    if(!isset($_SESSION)) session_start();
+    if(!isset($_SESSION['user'])){
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -35,3 +39,8 @@
 ?>
 <script src="./js/ls.js"></script>
 </html>
+<?php
+    }else{
+        header("Location:http://localhost/hwt/admin");
+    }
+?>

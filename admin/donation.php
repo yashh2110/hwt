@@ -99,5 +99,8 @@
 
 </div>
 <?php 
+  }else{
+    header("location:http://localhost/hwt/admin/login");
+
   }
 ?>

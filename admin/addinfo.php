@@ -78,5 +78,8 @@
  </div>
  <script src="./js/addinfo.js"></script>
  <?php 
+  }else{
+    header("location:http://localhost/hwt/admin/login");
+
   }
 ?>
