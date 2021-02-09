@@ -1,5 +1,6 @@
 <?php
-  session_start();
+  if(!isset($_SESSION)) session_start();
+  if(isset($_SESSION["user"])){
   include "dbconn.php";
   // if(isset($_SESSION["id"])){
   if(!$conn){
@@ -76,3 +77,6 @@
     </div>
  </div>
  <script src="./js/addinfo.js"></script>
+ <?php 
+  }
+?>

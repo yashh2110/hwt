@@ -1,0 +1,130 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@700&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+}
+a:hover {
+  text-decoration: none;
+}
+.allnav {
+  z-index: 10;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.bg {
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(-135deg, white, white, rgba(211, 8, 8, 0.185));
+}
+.logo {
+  color: #333;
+  margin: 5px;
+  line-height: 30px;
+}
+.admintitle {
+  font-family: "Nunito", sans-serif;
+  letter-spacing: 3px;
+  font-size: 1.5em;
+
+  color: #333;
+  white-space: nowrap;
+  padding: 10px;
+}
+.admintitle::before {
+  content: "A";
+  color: rgba(211, 8, 8, 0.8);
+}
+.logindiv {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+}
+.loginform {
+  position: relative;
+  width: 350px;
+  height: 400px;
+  border-radius: 10px;
+  background: #fff;
+  margin: auto;
+  overflow: hidden;
+  box-shadow: 0px 2px 10px rgba(128, 128, 128, 0.575);
+}
+.loginform::before {
+  content: "";
+  position: absolute;
+  right: -70px;
+  bottom: -70px;
+  opacity: 0.8;
+  box-shadow: 0px 2px 10px rgba(128, 128, 128, 0.6);
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  background: linear-gradient(
+    90deg,
+    rgba(211, 8, 8),
+    rgba(226, 8, 8, 0.815),
+    rgba(148, 19, 40, 0.705)
+  );
+}
+.loginform::after {
+  content: "";
+  position: absolute;
+  opacity: 0.7;
+  top: -40px;
+  left: -40px;
+  box-shadow: 0px 2px 5px rgba(128, 128, 128, 0.6);
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-color: rgba(211, 8, 8);
+}
+
+.loginform form {
+  position: relative;
+  top: 20px;
+}
+.title {
+  position: relative;
+  top: 30px;
+  font-family: "Nunito", sans-serif;
+  letter-spacing: 3px;
+  font-size: 1.5em;
+  text-align: center;
+  padding: 10px;
+}
+.title::before {
+  content: "l";
+  color: rgba(211, 8, 8);
+}
+.inp {
+  margin: 20px;
+  width: 70%;
+  padding: 7px;
+  border-radius: 5px;
+  border: 1px solid rgba(128, 128, 128, 0.658);
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  transition: all 0.3s ease;
+}
+.inp:focus {
+  outline: none;
+  border: 2px solid rgba(211, 8, 8, 0.8);
+}
+.button {
+  margin: 3px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 10px;
+  color: white;
+  border-radius: 5px;
+  background-color: rgba(211, 8, 8, 0.8);
+  border: none;
+}

@@ -11,6 +11,6 @@
     </ul>
     <div class="username-logout">
     <p class="username">Logged In As <span style="font-weight:bold">Yashwanth muddana</span></p>
-    <p class="text-center mr-4"><a href="#" class="logout">Logout</a></p>
+    <p class="text-center mr-4"><a href="./logout.php" class="logout">Logout</a></p>
 </div>
 </div>

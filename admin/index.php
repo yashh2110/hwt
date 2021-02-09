@@ -1,3 +1,7 @@
+<?php 
+  session_start();
+  if(isset($_SESSION['user'])){
+?>
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
@@ -21,3 +25,8 @@
      <script src="./js/index.js"></script>
   </body>
 </html>
+<?php 
+  }else{
+    header("location:http://localhost/hwt/admin/login");
+  }
+?>
